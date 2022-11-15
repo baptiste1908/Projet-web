@@ -1,12 +1,128 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-:root{
-    --ivoire: #FEF9E7;
-    --noir:#161616 ;
-    --marron: ;
-    --rouge: #A22522;
-    --vert: #5C7457;
+
+.sec1 .container .right img{
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p, button, a {
+    font-family: "poppins";
+}
+
+body{
+    background-color: #1d1e31;
+}
+
+/* NavBar */
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.navbar .container a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*Section 1 */
+
+.sec1 .container {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 150px;
+    margin-top: 20px;
+}
+
+.sec1 .container .left h1{
+    font-size: 7em;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+}
+
+.sec1 .container .left p{
+    color: #888888;
+    max-width: 600px; 
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.sec1 .container .left button {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: #2c2534;
+    font-size: 1.2em;
+    font-weight: 900;
+    background-color: #fec675;
+    box-shadow: 0px 0px 10px #fec675;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1300px){
+    .sec1 .container .left h1{
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 1150px) {
+    .sec1 .container {
+       flex-direction: column;
+       margin-top: 150px;
+    }
+
+    .sec1 .left {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sec1 .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec1 .right img {
+        margin-top: 50px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .sec1 .container .left h1 {
+        font-size: 4em;
+    }
+    .sec1 .container .left p{
+        margin: 40px 35px;
+    }
 }
 
