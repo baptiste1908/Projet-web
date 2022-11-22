@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.sec1 .container .right img{
-    width: 400px;
-    height: 400px;
-    margin: 30px;
-}
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
@@ -23,24 +18,50 @@ body{
     background-color: #1d1e31;
 }
 
+
+
+
 /* NavBar */
 
 .navbar{
-    height: 100px;
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
 .navbar .container {
-    max-width: 900px;
+    width: 900px;
     margin: 0 auto;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
 }
 
 .navbar .container a{
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.navbar .container a:hover{
+    color: #fec675;
+}
+
+
+@media (max-width: 700px) {
+    .navbar .container{
+        gap: 20px;
+    }
+    .navbar .container a{
+        font-size: 1em;
+    
+    }
 }
 
 
@@ -52,12 +73,19 @@ body{
 
 /*Section 1 */
 
+.sec1{
+    margin-top: 100px;
+}
+
 .sec1 .container {
     display: flex;
     align-items: center;
     max-width: 1500px;
-    margin: 150px;
-    margin-top: 20px;
+    margin: 90px;
+    margin-top: 75px;
+}
+.sec1 .container .left{
+    margin-top: -100px;
 }
 
 .sec1 .container .left h1{
@@ -84,6 +112,7 @@ body{
     background-color: #fec675;
     box-shadow: 0px 0px 10px #fec675;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1300px){
@@ -95,7 +124,6 @@ body{
 @media (max-width: 1150px) {
     .sec1 .container {
        flex-direction: column;
-       margin-top: 150px;
     }
 
     .sec1 .left {
@@ -112,17 +140,111 @@ body{
     }
 
     .sec1 .right img {
+        display: flex;
         margin-top: 50px;
-        width: 90%;
+        width: 80%;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .sec1 .container .left h1 {
         font-size: 4em;
+        margin-top: 0px;
     }
     .sec1 .container .left p{
         margin: 40px 35px;
     }
 }
 
+
+
+/* Section 2 */
+
+.sec2 .left img {
+    width: 400px;
+    height: 100%;
+}
+
+.sec2{
+    margin: 90px 0;
+}
+
+
+.sec2 .container {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 90px;
+}
+
+.sec2 .big-card {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #353448;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    animation: ombre 5s infinite ease-in-out;
+}
+
+@keyframes ombre{
+    0%{
+        box-shadow: 0px 0px 45px 30px #fec675;
+    }
+    20%{
+        box-shadow: 0px 0px 45px 0px #fec675;
+    }
+    40%{
+        box-shadow: 0px 0px 45px 15px #fec675;
+    }
+    70%{
+        box-shadow: 0px 0px 45px -10px #fec675;
+    }
+    100%{
+        box-shadow: 0px 0px 45px 30px #fec675;
+    }
+}
+
+.sec2 .big-card .arrow::before{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fec675;  
+    top: 50%;
+    left: 50%;
+
+}
+
+
+
+.sec2 .big-card .left{
+    margin-right: 80px;
+}
+
+.sec2 .big-card .left img {
+    position: relative;
+}
+
+.sec2 .big-card .right{
+    max-width: 500px;
+    
+}
+
+.sec2 .big-card h4{
+    color: #fec675;
+    letter-spacing: 2px;
+}
+
+.sec2 .big-card h1{
+    color: white;
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+
+.sec2 .big-card p{
+    color: #b1b1b1;
+    line-break: anywhere;
+}
