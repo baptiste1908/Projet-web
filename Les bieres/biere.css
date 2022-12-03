@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: 100px repeat(4, 1fr) 100px;
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 7; }
@@ -14,4 +14,3 @@
     .div4 { grid-area: 4 / 2 / 6 / 4; }
     .div5 { grid-area: 4 / 4 / 6 / 6; }
 
-    
