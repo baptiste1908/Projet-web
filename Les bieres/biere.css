@@ -1,11 +1,21 @@
 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1d1e31;
+}
 
 .parent {
     display: grid;
-    grid-template-columns: 100px repeat(4, 1fr) 100px;
+    grid-template-columns: 80px repeat(4, 1fr) 80px;
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+   
+    flex-direction: row;
+    flex-wrap: wrap;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 7; }
@@ -14,3 +24,6 @@
     .div4 { grid-area: 4 / 2 / 6 / 4; }
     .div5 { grid-area: 4 / 4 / 6 / 6; }
 
+.div1 , .div2 , .div3, .div4 , .div5{
+    border: 1px solid white;
+}
