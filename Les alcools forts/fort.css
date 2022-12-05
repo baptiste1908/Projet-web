@@ -152,7 +152,9 @@ section{
   transition: 0.5s;
   margin-left: 10px;
 }
-
+.btn1:hover{
+  letter-spacing: 4px;
+}
 
 
 
