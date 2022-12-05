@@ -35,7 +35,7 @@ header{
   list-style: none;
 }
 .navbar a{
-  color: black;
+  color: wheat;
   text-decoration: none;
   margin-left: 30px;
   font-weight: 700;
@@ -50,15 +50,13 @@ header .navbar li a:hover{
 
 
 
-
-
 section{
   padding: 100px;
-  /* background-color: #1d1e31; */
+  background-color: #1d1e31; 
 }
 
 .titre-texte{
-  color: #000;
+  color: white;
   font-size: 2em;
   font-weight: 300px;
   text-transform: capitalize;
@@ -68,6 +66,15 @@ section{
   color: #fb911f;
   font-size: 1.5em;
   font-weight: 700px;
+}
+.titre span{
+  color: #fb911f;
+  font-size: 1.5em;
+  font-weight: 700px;
+}
+
+.titre p{
+  color: whitesmoke;
 }
 
 .titre{
@@ -93,7 +100,7 @@ section{
   width: 350px;
   margin: 20px;
   border: 20px solid #fff;
-  box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+  box-shadow: 20px 15px 35px rgba(255, 254, 254, 0.6);
 }
 
 .menu .contenu .box .imbox{
@@ -114,16 +121,37 @@ section{
 .menu .contenu .box .text{
   text-align: center;
   font-weight: 300px;
-  color: #111;
+  color: whitesmoke;
 }
 
 .menu .contenu .box .text h3{
   font-weight: 400;
 }
 
+.menu .contenu .box .text h3 {
+  color: #fb911f;
+  text-decoration: underline double;
+}
+.menu .contenu .box .text a {
+  color: wheat;
+  text-decoration: underline  wheat;
+  justify-content: center;
+}
 
 
-
+.btn1 {
+  font-size: 1em;
+  color: #fff;
+  background: #fb911f;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
 
 
 
@@ -147,7 +175,7 @@ header .navbar li{
 }
 
 header .navbar li a {
-  color: black;
+  color: white;
   text-decoration: none;
   margin-left: 30px;
   font-weight: 700;
@@ -186,9 +214,17 @@ header .navbar.active{
 @media (max-width: 480px)
 {
   .titre-text{
-      color: #000;
+      color: white;
       font-size: 2rem;
       font-weight: 300;
       text-transform: capitalize;
   }
+  .menu .contenu .box .imbox img {
+    position: relative;
+    top: 0;
+    left: 37px;
+    width: 134px;
+    height: 298px;
+    object-fit: cover;
+}
 }
