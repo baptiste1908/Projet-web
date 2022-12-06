@@ -14,7 +14,7 @@
   
   /* La navbar */
   header{
-    position: fixed;
+    position: fixed; 
     top: 0%;
     left: 0%;
     padding: 20px 10px;
@@ -96,20 +96,26 @@
     margin-top: 40px;
   }
   
-  .menu .contenu .box{
+
+
+/* Le mojito  */
+
+
+
+  .menu .contenu .box .mojito{
     width: 350px;
     margin: 20px;
     border: 20px solid #fff;
-    box-shadow: 20px 15px 35px rgba(255, 254, 254, 0.6);
+    box-shadow: 20px 15px 35px rgba(17, 187, 26, 0.6);
   }
   
-  .menu .contenu .box .imbox{
+  .menu .contenu .box .mojito .imbox {
     position: relative;
     width: 100%;
     height: 300px;
   }
   
-  .menu .contenu .box .imbox img {
+  .menu .contenu .box .mojito .imbox img {
     position: relative;
     top: 0;
     left: 89px;
@@ -118,27 +124,37 @@
     object-fit: cover;
   }
   
-  .menu .contenu .box .text{
+  .menu .contenu .box .mojito .text { 
     text-align: center;
     font-weight: 300px;
     color: whitesmoke;
+    position: relative;
   }
   
-  .menu .contenu .box .text h3{
+  .menu .contenu .box .mojito .text h3 {
     font-weight: 400;
   }
   
-  .menu .contenu .box .text h3 {
+  .menu .contenu .box .mojito.text h3  {
     color: #fb911f;
     text-decoration: underline double;
   }
-  .menu .contenu .box .text a {
-    color: wheat;
-    text-decoration: underline  wheat;
-    justify-content: center;
-  }
+
   
+/* Pina colada */
+
   
+
+
+
+
+
+
+
+
+
+
+
   .btn1 {
     font-size: 1em;
     color: #fff;
