@@ -6,7 +6,9 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #1d1e31;
+    background-color: #1D1E31;
+    
+    
 }
 
 .description{
@@ -19,8 +21,9 @@ body{
 .description img{
     height: auto;
     width:400px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
+
 
 .description-text{
     width: 550px;
@@ -127,7 +130,17 @@ header{
   
   header .navbar li a:hover{
     color: #fb911f;
-    border-bottom: 2px solid #fb911f;
-  }
-  
-  
+    border-bottom: 2px solid #fb911f;}
+ /* footer */
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #1D1E31;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+
