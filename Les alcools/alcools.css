@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #1d1e31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section 4 */
+
+.sec4 .center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.sec4 .title h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    font-style: italic;
+    font-style: oblique;
+}
+
+.sec4 .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    
+}
+
+.sec4 .card1 {
+    position: relative;
+    height: 450px;
+    width: 300px;
+    background-color: gray;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.sec4 .card1 .top {
+    background: linear-gradient(to top, violet, aquamarine, darkblue);
+    opacity: 0.7;
+    position: relative;
+    height: 100%;
+}
+
+.sec4 .card1 .top img {
+    position: relative;
+    width: 200px;
+    top: 5px;
+    left: 50px;
+}
+.sec4 .card1 .top .img2 img {
+    position: relative;
+    width: 280px;
+    left: 10px;
+    top: 110px;
+    height: 130px;
+    border-radius: 15px;
+}
+
+.sec4 .card1 .top p {
+    font-family: 'Lobster Two';
+    position: absolute;
+    top: 220px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.sec4 .card2 {
+    position: relative;
+    height: 450px;
+    width: 300px;
+    background-color: gray;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+}
+.sec4 .card2 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sec4 .card3 {
+    position: relative;
+    height: 450px;
+    width: 300px;
+    background-color: gray;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+}
+.sec4 .card3 .top {
+    background: linear-gradient(to top, violet, aquamarine, darkblue);
+    opacity: 0.7;
+    position: relative;
+    height: 100%;
+}
+
+.sec4 .card3 .top img {
+    position: relative;
+    width: 200px;
+    top: 10px;
+    left: 50px;
+}
+.sec4 .card3 .top .img2 img {
+    position: relative;
+    width: 283px;
+    top: 128px;
+    left: 10px;
+}
+.sec4 .card3 .top p {
+    font-family: 'Lobster Two';
+    position: absolute;
+    top: 220px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    left: 25px;
+}
