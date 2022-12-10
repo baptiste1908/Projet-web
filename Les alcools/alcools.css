@@ -86,37 +86,6 @@ body {
 
 
 
-
-
-
-
-
-
-.sec4 .card2 {
-    position: relative;
-    height: 450px;
-    width: 300px;
-    background-color: gray;
-    border-radius: 15px;
-    margin: 20px;
-    overflow: hidden;
-}
-.sec4 .card2 img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-}
-
-
-
-
-
-
-
-
-
-
-
 .sec4 .card3 {
     position: relative;
     height: 450px;
@@ -154,3 +123,77 @@ body {
     font-size: 48px;
     left: 25px;
 }
+
+/* Pour gagner du temps, j'ai réutiliser le css de la card3 afin de faire la card2 */
+
+.sec4 .card2 {
+    position: relative;
+    height: 450px;
+    width: 300px;
+    background-color: gray;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+}
+.sec4 .card2 .top {
+    background: linear-gradient(to top, violet, aquamarine, darkblue);
+    opacity: 0.7;
+    position: relative;
+    height: 100%;
+}
+
+.sec4 .card2 .top img {
+    position: relative;
+    width: 232px;
+    top: 24px;
+    left: 33px;
+}
+.sec4 .card2 .top .img2 img {
+    position: relative;
+    width: 227px;
+    top: 100px;
+    left: 35px;
+}
+.sec4 .card2 .top p {
+    font-family: 'Lobster Two';
+    position: absolute;
+    top: 232px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec4 .container .card1:hover, .card2:hover, .card3:hover{
+    transition: 0.2s;
+    transform: scale(1.10);
+    cursor: pointer;
+  }
