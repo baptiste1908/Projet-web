@@ -81,6 +81,7 @@ body {
     font-style: italic;
     font-size: 50px;
     left: 40px;
+    color: black;
 }
 
 
@@ -122,6 +123,7 @@ body {
     font-style: italic;
     font-size: 48px;
     left: 25px;
+    color: black;
 }
 
 /* Pour gagner du temps, j'ai réutiliser le css de la card3 afin de faire la card2 */
@@ -157,11 +159,12 @@ body {
 .sec4 .card2 .top p {
     font-family: 'Lobster Two';
     position: absolute;
-    top: 232px;
+    top: 220px;
     font-weight: 700;
     font-style: italic;
     font-size: 40px;
     left: 20px;
+    color: black;
 }
 
 
