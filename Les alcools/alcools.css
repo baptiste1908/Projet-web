@@ -45,7 +45,8 @@ body {
     position: relative;
     height: 450px;
     width: 300px;
-    background-color: gray;
+    background-color: gray
+;
     border-radius: 15px;
     margin: 20px;
     overflow: hidden;
