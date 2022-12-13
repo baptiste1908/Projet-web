@@ -134,7 +134,7 @@ section{
   color: #fb911f;
   text-decoration: underline double;
 }
-.menu .contenu .box .text a {
+.menu .contenu .box .text li a {
   color: wheat;
   text-decoration: underline  wheat;
   justify-content: center;
@@ -160,7 +160,22 @@ section{
 
 
 
-
+.rating {
+  direction: rtl;
+}
+.rating a {
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+  transition: color .4s;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+  color: orange;
+  cursor: pointer;
+}
 
 
 
