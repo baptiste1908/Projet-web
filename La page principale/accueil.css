@@ -61,17 +61,49 @@ header{
     .sec2 { grid-area: 2 / 1 / 5 / 6; }
     .sec3 { grid-area: 5 / 1 / 6 / 6; }
 
-  .sec1{
-    padding: 100px;
+  .sec2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
   }
+  .sec2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    max-width: 1500px;
+    margin: 90px;
+    margin-top: 75px;
+}
 
-  .titre{
-    display: grid;
-    text-align: center;
-    font-size: xx-large;
-  }
+.sec2 h1{
+    font-size: 2em;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+}
 
-  .sec1 p{
+.sec2  p{
+    color: #888888;
+    max-width: 600px; 
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.sec2  button {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: #2c2534;
+    font-size: 1.2em;
+    font-weight: 900;
+    background-color: #fec675;
+    box-shadow: 0px 0px 10px #fec675;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+  .sec2 p{
     color: white;
     text-align: center;
   }
@@ -83,67 +115,15 @@ header{
     color:#fb911f;
   }
 
-  /*section 2*/ 
-  .sec3 img {
-    width: 100%;
-    height: 100%;
-}
-
-.sec3{
-    margin: 90px 0;
-}
 
 
-.sec3 .parent {
-    display: flex;
-    align-items: center;
-    max-width: 1500px;
-    margin: 90px;
-}
-
-.sec3 .big-card {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #353448;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    animation: ombre 5s infinite ease-in-out;
-}
-
-@keyframes ombre{
-    0%{
-        box-shadow: 0px 0px 45px 30px #fec675;
-    }
-    20%{
-        box-shadow: 0px 0px 45px 0px #fec675;
-    }
-    40%{
-        box-shadow: 0px 0px 45px 15px #fec675;
-    }
-    70%{
-        box-shadow: 0px 0px 45px -10px #fec675;
-    }
-    100%{
-        box-shadow: 0px 0px 45px 30px #fec675;
-    }
-}
-
-.sec2 .big-card .arrow::before{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: #fec675;  
-    top: 50%;
-    left: 50%;
-
-}
 
 
- 
+
+
+
+
+
  /*responsive*/
  
  @media (max-width: 990px) {
