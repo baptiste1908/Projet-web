@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 body {
     background-color: #1d1e31;
     display: flex;
@@ -166,31 +160,6 @@ body {
     left: 20px;
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

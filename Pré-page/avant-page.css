@@ -1,0 +1,67 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Popins, sans-serif;
+    font-size: 17px;
+    color: white;
+    line-height: 1.6;
+}
+
+#showcase {
+    background-image: url(https://images.pexels.com/photos/12446438/pexels-photo-12446438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase h1 {
+    font-size: 50px;
+}
+#showcase p {
+    font-size: 20px;
+    color: red;
+}
+
+#showcase .button1 {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    background: wheat;
+    color: orangered;
+    font-weight: 900;
+    border: red 5px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#showcase .button2 {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    background: wheat;
+    color: orangered;
+    font-weight: 900;
+    border: green 5px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+#showcase .button1:hover ,.button2:hover{
+    transition: 0.2s;
+    transform: scale(1.10);
+    cursor: pointer;
+}
