@@ -63,7 +63,7 @@ span{
 }
 
 #website{
-    background-color: rgb(255, 251, 251);
+    background-color: #fb911f;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -94,110 +94,85 @@ iframe{
     }
     
 }
-
-.container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    max-width: 1500px;
-   
-    
-}
 h1{
-    color: white;
-    font-size: 3em;
-    font-weight: 700;
-    font-style: italic;
-    font-style: oblique;
-    margin-bottom: 40px;
-    text-align: center;
-}
-.container>div>h3{
-    color: #fb911f;
-    font-size: 1.5em;
-    font-weight: 700;
-    font-style: italic;
-    font-style: oblique;
-    margin-bottom: 40px;
-    text-align: center;
-}
-.container>div>p{
-    color: #fb911f;
-    font-size: 1.2em;
-    font-weight: 700;
-    font-style: italic;
-    font-style: oblique;
-    padding-top: 210px;
-    text-align: center;
-}
-.avis1{
-    position: relative;
-    height: 350px;
-    width: 250px;
-    background-color: rgb(255, 251, 251);
-    border-radius: 15px;
-    margin: 20px;
-    overflow: hidden;
-    
-}
-
-.container .imbox{
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    position: relative;
+    color: #FFFFFF;
+    font-size: 50px;
+    text-transform: capitalize;
     margin-bottom: 20px;
-    overflow: hidden;
-    top: -269px;
-    left: 84px;
-
-    
+    text-align: center;
 }
-.container .imbox img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    top: 0px;
-    left: 0px;
+
+:root {
+    --clr-primary: #fb911f;
+    --clr-gray: #37474f;
+    --clr-gray-light: #b0bec5;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--clr-gray);
+    margin: 2rem;
+  }
+  
+  .wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
-    align-items: center;
 }
-
-
-
-
-
-
-
-.avis2{
-    position: relative;
-    height: 350px;
-    width: 250px;
-    background-color: rgb(255, 251, 251);
-    border-radius: 15px;
-    margin: 20px;
+  
+  
+  .container {
     overflow: hidden;
-}
-.avis3{
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
     position: relative;
-    height: 350px;
-    width: 250px;
-    background-color: rgb(255, 251, 251);
-    border-radius: 15px;
-    margin: 20px;
-    overflow: hidden;
-}
-.avis4{
-    position: relative;
-    height: 350px;
-    width: 250px;
-    background-color: rgb(255, 251, 251);
-    border-radius: 15px;
-    margin: 20px;
-    overflow: hidden;
-}
-
+    margin: 0.5rem;
+  }
+  
+  .banner-img {
+    position: absolute;
+    background-image: linear-gradient(to right top, #fb911f, #f28918, #e98011, #e17808, #d87000);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .profile-img {
+    width: 8rem;
+    clip-path: circle(60px at center);
+    margin-top: 4.5rem;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .descriptions {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    background-color: var(--clr-primary);
+  }
+  
 
 /* La navbar */
 
