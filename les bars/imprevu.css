@@ -94,7 +94,7 @@ iframe{
     }
     
 }
-h1{
+.description-text h1{
     color: #FFFFFF;
     font-size: 50px;
     text-transform: capitalize;
@@ -140,7 +140,7 @@ h1{
   .banner-img {
     position: absolute;
     background-image: linear-gradient(to right top, #fb911f, #f28918, #e98011, #e17808, #d87000);
-    height: 10rem;
+    height: 5rem;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,7 +150,7 @@ h1{
   .profile-img {
     width: 8rem;
     clip-path: circle(60px at center);
-    margin-top: 4.5rem;
+    margin-top: 0.5rem;
   }
   
   .name {
@@ -161,16 +161,14 @@ h1{
   .descriptions {
     margin: 1rem 2rem;
     font-size: 0.9rem;
+    font-family: poppins;
   }
   
-  .btn {
-    width: 100%;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    padding: 1rem;
-    background-color: var(--clr-primary);
+  #avis{
+    color:#FFFFFF;
+    text-align: center;
+    font-family: poppins;
+    margin-bottom: 40px;
   }
   
 
