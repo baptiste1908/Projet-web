@@ -12,7 +12,9 @@ p{
   color: #111;
 }
 
-/* La navbar */
+
+/* CSS de la navbar */
+
 header{
   position: fixed;
   top: 0%;
@@ -25,7 +27,6 @@ header{
   align-items: center;
   transition: 0.5s;
   background-color: #1d1e31;
-
 }
 
 
@@ -44,7 +45,7 @@ header{
 }
 
 
-header .navbar li a:hover{
+header .navbar li a:hover{           /* Survol de la Navbar */
   color: #fb911f;
   border-bottom: 2px solid #fb911f;
 }
@@ -52,9 +53,23 @@ header .navbar li a:hover{
 
 
 
-section{
+section{                 /*Ajout de la couleur de fond */
   padding: 100px;
   background-color: #1d1e31; 
+}
+
+
+
+
+
+/* CSS du titre */
+
+.titre{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .titre-texte{
@@ -69,23 +84,17 @@ section{
   font-size: 1.5em;
   font-weight: 700px;
 }
-.titre span{
-  color: #fb911f;
-  font-size: 1.5em;
-  font-weight: 700px;
-}
 
 .titre p{
   color: whitesmoke;
 }
 
-.titre{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
+
+
+
+
+/*Positionnement du contenue de la page */
 
 .menu{
   margin-top: -50px;
@@ -98,7 +107,7 @@ section{
   margin-top: 40px;
 }
 
-.menu .contenu .box{
+.menu .contenu .box{          /* On fait les contours des boites */ 
   width: 350px;
   margin: 20px;
   border: 20px solid #fff;
@@ -120,21 +129,22 @@ section{
   object-fit: cover;
 }
 
-.menu .contenu .box .text{
+.menu .contenu .box .text{  /* Positionnemnet du titre orange */
   text-align: center;
   font-weight: 300px;
   color: whitesmoke;
 }
 
-.menu .contenu .box .text h3{
+.menu .contenu .box .text h3{   /* On met les titre en gras, en orange et on les soulignent*/
   font-weight: 400;
-}
-
-.menu .contenu .box .text h3 {
   color: #fb911f;
   text-decoration: underline double;
 }
 
+
+
+
+/* On fait le css de notre système de notation */
 
 .rating {
   direction: rtl;
@@ -155,6 +165,8 @@ section{
 
 
 
+/* On positionne bien les images des bières dans les boites */
+
 
 .menu .contenu .box .imbox .paix-dieu img {
   width: 150px;
@@ -163,10 +175,10 @@ section{
   top: -10px;
 }
 .menu .contenu .box .imbox .karmeliet img {
-    width: 150px;
-    height: 376px;
-    left: 80px;
-    top: -40px;
+  width: 150px;
+  height: 376px;
+  left: 80px;
+  top: -40px;
 }
 .menu .contenu .box .imbox .Queue-de-Charrue img {
   width: 150px;
@@ -181,10 +193,10 @@ section{
   top: -10px;
 }
 .menu .contenu .box .imbox .Desperados img {
-    width: 70px;
-    height: 275px;
-    left: 123px;
-    top: 10px;
+  width: 70px;
+  height: 275px;
+  left: 123px;
+  top: 10px;
 }
 
 
@@ -192,7 +204,7 @@ section{
 
 
 
-
+/* On fait le CSS du bouton "Voir plus" qui nous raméne en haut de la page pour l'instant. */
 
 .btn1 {
   font-size: 1em;
@@ -220,15 +232,15 @@ section{
 
 
 
-/* Responsive */
+/* Responsive pour l'affiche tablette*/
 
 @media (max-width: 990px) {
 
-header .navbar li{
+header .navbar li{     
   margin-left: 0px;
 }
 
-header .navbar li a {
+header .navbar li a {    
   color: white;
   text-decoration: none;
   margin-left: 30px;
@@ -265,7 +277,12 @@ header .navbar.active{
 
 
 
-@media (max-width: 480px)
+
+
+/*Affichage moyen d'Iphone 12 pro 
+  Ajustement des images  */
+
+ @media (max-width: 480px)  
 {
   .titre-text{
       color: white;
@@ -273,12 +290,48 @@ header .navbar.active{
       font-weight: 300;
       text-transform: capitalize;
   }
-  .menu .contenu .box .imbox img {
+
+  /* Repositionnement des images  */
+  
+  .menu .contenu .box .imbox .paix-dieu img {
     position: relative;
     top: 0;
-    left: 37px;
+    left: 35px;
     width: 134px;
     height: 298px;
     object-fit: cover;
-}
+  }
+  .menu .contenu .box .imbox .karmeliet img {
+    position: relative;
+    top: 0;
+    left: 35px;
+    width: 134px;
+    height: 298px;
+    object-fit: cover;
+  }
+  .menu .contenu .box .imbox .Queue-de-Charrue img {
+    position: relative;
+    top: 0;
+    left: 35px;
+    width: 134px;
+    height: 298px;
+    object-fit: cover;
+  }
+  .menu .contenu .box .imbox .La-Cuvée-des-trolls img {
+    position: relative;
+    top: 0;
+    left: 35px;
+    width: 134px;
+    height: 298px;
+    object-fit: cover;
+  }
+  .menu .contenu .box .imbox .Desperados img {
+    position: relative;
+    width: 70px;
+    height: 275px;
+    left: 65px;
+    top: 10px;
+    object-fit: cover;
+  }
+
 }
