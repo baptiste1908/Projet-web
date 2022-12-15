@@ -5,13 +5,15 @@
 }
 
 body {
-    font-family: Popins, sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 17px;
     color: white;
     line-height: 1.6;
 }
 
-#showcase {
+
+/* CSS de la pré-page avec l'image en fond d'écran + positionnement des élèments  */
+#pre-page {
     background-image: url(https://images.pexels.com/photos/12446438/pexels-photo-12446438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     height: 100vh;
     background-position: center;
@@ -24,15 +26,22 @@ body {
     padding: 0 20px;
 }
 
-#showcase h1 {
+
+/* CSS du texte h1 et p sur la prévention des effets de l'alcools. */
+#pre-page h1 {
     font-size: 50px;
 }
-#showcase p {
+#pre-page p {
     font-size: 20px;
     color: red;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-decoration:  underline orange;
 }
 
-#showcase .button1 {
+
+/* CSS du 1er bouton qui renvoie vers écosia */
+#pre-page .button1 {
     display: inline-block;
     font-size: 18px;
     text-decoration: none;
@@ -45,7 +54,9 @@ body {
     margin-top: 20px;
     margin-left: 10px;
 }
-#showcase .button2 {
+
+/* CSS du 2eme bouton qui envoie sur la page d'acceuil de notre site */
+#pre-page .button2 {
     display: inline-block;
     font-size: 18px;
     text-decoration: none;
@@ -60,7 +71,8 @@ body {
 }
 
 
-#showcase .button1:hover ,.button2:hover{
+/* CSS pour le survol des bouton */
+#pre-page .button1:hover ,.button2:hover{
     transition: 0.2s;
     transform: scale(1.10);
     cursor: pointer;
