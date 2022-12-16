@@ -13,6 +13,54 @@ body{
 
 
 
+
+
+
+/* CSS de la navbar */
+
+header{
+    position: fixed;
+    top: 0%;
+    left: -30px;
+    padding: 15px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    background: linear-gradient(to left, hotpink, aquamarine, darkblue);
+  }
+  
+  
+  .navbar{
+    display: flex;
+    position: relative;
+  }
+  .navbar li{
+    list-style: none;
+  }
+  .navbar a{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+  }
+  
+  
+  header .navbar li a:hover{           /* Survol de la Navbar */
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+  }
+
+
+
+
+
+
+
+
+
 /* Création de la carte principale  */
 .login-card{
     width: 300px;
@@ -20,6 +68,7 @@ body{
     padding: 4rem;
     border-radius: 10px;
     position: relative;
+    top: 12vh;
 }
 
 /* Ajout du logo  */
@@ -145,7 +194,7 @@ body{
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 15vh;
     opacity: .8;
     text-transform: uppercase;
     letter-spacing: 1px;
