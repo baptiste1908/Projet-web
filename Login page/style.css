@@ -1,6 +1,6 @@
-@import url(reset.css);
 
 @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;600 & display=swap');
+
 
 body{
     font-family: 'poppins' sans-serif;
@@ -11,6 +11,9 @@ body{
     justify-content: center;
 }
 
+
+
+/* Création de la carte principale  */
 .login-card{
     width: 300px;
     background:rgba(255, 255, 255, .5);
@@ -19,15 +22,7 @@ body{
     position: relative;
 }
 
-.login-card::before{
-    content: '';
-    position: absolute;
-    background-color: rgba(255, 255, 255, .15);
-    inset: 0;
-    transform: rotate(-5deg);
-    z-index: -1;
-}
-
+/* Ajout du logo  */
 .login-card-logo{
     margin-bottom: 2rem;
 }
@@ -65,6 +60,9 @@ body{
     opacity: .8;
 }
 
+
+
+
 .login-card-form{
     display: flex;
     flex-direction: column;
@@ -97,10 +95,13 @@ body{
     margin-bottom: .5rem;
 }
 
+
+/* Css du footer de la card */
 .login-card-footer{
     margin-top: 1.5rem;
     font-size: calc(1rem * .8);
 }
+
 
 .login-card input[type="text"],
 .login-card input[type="password"],
@@ -116,6 +117,8 @@ body{
 .login-card input:focus {
     background-color: whitesmoke;
 }
+
+
 .login-card input[type="checkbox"]{
     width: 16px;
     height: 16px;
@@ -131,6 +134,7 @@ body{
     letter-spacing: 2px;
 }
 
+/* Css pour le survol du bouton */
 .login-card-form button:hover{
     background-color: rgba(0, 0, 0, .80);
     cursor: pointer;
@@ -142,14 +146,13 @@ body{
     gap: 1.5rem;
     text-align: center;
     margin-top: 3rem;
-}
-
-.login-card-social{
     opacity: .8;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: calc(1rem * .8rem);
 }
+
+
 
 .login-card-social-btns{
     display: flex;
@@ -169,10 +172,18 @@ body{
     border-radius: 100px;
 }
 
+
+/* Css pour le survol des boutons des autre formes de connexion  */
 .login-card-social-btns a:hover{
     background-color: whitesmoke;
     transform: scale(1.1);
 }
+
+
+
+
+
+/* Responsive pour téléphone */
 
 @media (max-width: 768px){
 
