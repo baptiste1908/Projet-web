@@ -12,7 +12,7 @@ p{
   color: #111;
 }
 
-/* La navbar */
+/* CSS de la navbar */
 header{
   position: fixed;
   top: 0%;
@@ -44,7 +44,7 @@ header{
 }
 
 
-header .navbar li a:hover{
+header .navbar li a:hover{      /* Survol de la Navbar */
   color: #fb911f;
   border-bottom: 2px solid #fb911f;
 }
@@ -52,9 +52,22 @@ header .navbar li a:hover{
 
 
 
-section{
+section{          /*Ajout de la couleur de fond */
   padding: 100px;
   background-color: #1d1e31; 
+}
+
+
+
+
+/* CSS du titre */
+
+.titre{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .titre-texte{
@@ -69,23 +82,15 @@ section{
   font-size: 1.5em;
   font-weight: 700px;
 }
-.titre span{
-  color: #fb911f;
-  font-size: 1.5em;
-  font-weight: 700px;
-}
 
 .titre p{
   color: whitesmoke;
 }
 
-.titre{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
+
+
+/*Positionnement du contenue de la page */
 
 .menu{
   margin-top: -50px;
@@ -98,7 +103,7 @@ section{
   margin-top: 40px;
 }
 
-.menu .contenu .box{
+.menu .contenu .box{    /* On fait les contours des boites */ 
   width: 350px;
   margin: 20px;
   border: 20px solid #fff;
@@ -120,26 +125,27 @@ section{
   object-fit: cover;
 }
 
-.menu .contenu .box .text{
+.menu .contenu .box .text{    /* Positionnemnet du titre orange */
   text-align: center;
   font-weight: 300px;
   color: whitesmoke;
 }
 
-.menu .contenu .box .text h3{
+.menu .contenu .box .text h3{  /* On met les titre en gras, en orange et on les soulignent*/
   font-weight: 400;
-}
-
-.menu .contenu .box .text h3 {
   color: #fb911f;
   text-decoration: underline double;
 }
+
 .menu .contenu .box .text li a {
   color: wheat;
   text-decoration: underline  wheat;
   justify-content: center;
 }
 
+
+
+/* On fait le CSS du bouton "Voir plus" qui nous raméne en haut de la page pour l'instant. */
 
 .btn1 {
   font-size: 1em;
@@ -159,6 +165,9 @@ section{
 }
 
 
+
+
+/* On fait le css de notre système de notation */
 
 .rating {
   direction: rtl;
@@ -185,7 +194,7 @@ section{
 
 
 
-/* Responsive */
+/* Responsive pour tablette */
 
 @media (max-width: 990px) {
 
@@ -229,6 +238,7 @@ header .navbar.active{
 }
 
 
+/* Responsive pour Iphone XR */
 
 @media (max-width: 480px)
 {
