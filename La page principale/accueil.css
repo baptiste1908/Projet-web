@@ -207,6 +207,10 @@ p{  /*on determine la couleur du texte*/
 #insta:hover{  /* on definit la couleur du lien instagram lorsqu'on le survole*/
   color: violet;
 }
+
+.sec4 h2{
+  color: wheat;
+}
  /*responsive*/
  
  @media (max-width: 990px) {  /* on fait le responsive du site pour un affichage max de 990px*/
