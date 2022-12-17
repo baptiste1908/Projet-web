@@ -92,6 +92,7 @@ header{  /* on definit la position, la taille et la couleur de tout ce qui se tr
   height: 115%;
   margin: 0 auto;
   background-color: #353448;
+  text-transform: none;
   border-radius: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -123,6 +124,12 @@ header{  /* on definit la position, la taille et la couleur de tout ce qui se tr
   cursor: pointer;
 }
 
+.sec2 h1{  /*on definit le style du titre h1 dans le bouton*/
+  color: wheat;
+  text-decoration: none;
+  font-style: normal;
+}
+
 
 .sec2{  /*on determine les marges de la section 2*/ 
   padding: 120px;
@@ -131,8 +138,8 @@ header{  /* on definit la position, la taille et la couleur de tout ce qui se tr
 
   /*section 3*/ 
 .sec3 img {  /* on definit la taille et la marge externe de l'image*/
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   margin: 25px 0px;
   border-radius: 20px;
 }
@@ -201,6 +208,10 @@ p{  /*on determine la couleur du texte*/
 
 #insta:hover{  /* on definit la couleur du lien instagram lorsqu'on le survole*/
   color: violet;
+}
+
+.sec4 h2{
+  color: wheat;
 }
  /*responsive*/
  
