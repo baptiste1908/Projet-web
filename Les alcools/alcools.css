@@ -1,7 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -17,6 +19,45 @@ body {
     align-items: center;
 }
 
+p{
+    font-weight: 300;
+    color: #111;
+}
+/*Navbar*/
+header{  /* on definit la position, la taille et la couleur de tout ce qui se trouve dans le header*/
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 15px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #1d1e31;
+  
+  }
+  
+  .navbar{  /*on determine la position de la navbar*/
+    display: flex;
+    position: relative;
+  }
+  .navbar li{  /*on ne met pas de style pour les listes de la navbar*/
+    list-style: none;
+  }
+  .navbar a{  /* on definiit le style et la position des liens de la navbar*/
+    color: wheat;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+  }
+  
+  
+  header .navbar li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+  }
 /* section 4 */
 
 .sec4 .center {

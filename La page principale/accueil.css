@@ -1,4 +1,4 @@
-*{
+*{   /*on definit le meme style pour tout le code*/
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -7,13 +7,13 @@
   }
   
   
-  p{
+  p{  /*on met un style pour toute les zones de texte*/
     font-weight: 300;
     color: #111;
   }
 
 /* La navbar */
-header{
+header{  /* on definit la position, la taille et la couleur de tout ce qui se trouve dans le header*/
     position: fixed;
     top: 0%;
     left: 0%;
@@ -28,14 +28,14 @@ header{
   
   }
   
-  .navbar{
+  .navbar{  /*on determine la position de la navbar*/
     display: flex;
     position: relative;
   }
-  .navbar li{
+  .navbar li{  /*on ne met pas de style pour les listes de la navbar*/
     list-style: none;
   }
-  .navbar a{
+  .navbar a{  /* on definiit le style et la position des liens de la navbar*/
     color: wheat;
     text-decoration: none;
     margin-left: 30px;
@@ -43,12 +43,12 @@ header{
   }
   
   
-  header .navbar li a:hover{
+  header .navbar li a:hover{  /*on met un style lorsque l'on survole un lien de la navbar*/
     color: #fb911f;
     border-bottom: 2px solid #fb911f;
   }
 
-  .parent {
+  .parent {  /*on definit les grids dans tout le code*/
     display: grid;
     grid-template-columns: repeat(1fr, 1fr);
     grid-template-rows: repeat(1fr, 1fr);
@@ -62,30 +62,30 @@ header{
     .sec3 { grid-area: 5 / 1 / 6 / 6; }
     .sec4 { grid-area: 7 / 1 / 7 / 7; }
 
-  .sec1{
+  .sec1{  /* on met une marge interne*/
     padding: 150px;
   }
 
-  .titre{
+  .titre{  /*on place le titre et sa taille*/
     display: grid;
     text-align: center;
     font-size: xx-large;
   }
 
-  .sec1 p{
+  .sec1 p{  /* on met le texte en blanc et au centre de la page*/
     color: white;
     text-align: center;
   }
 
-  h1{
+  h1{  /*on donne la couleur blanche au titre*/
     color:white;
   }
-  h1 span{
+  h1 span{  /* on donne une autre couleur a tout ce qui est compris entre les span*/
     color:#fb911f;
   }
   
   /*section 2*/
-.sec2 button{
+.sec2 button{  /*on definit la taille, la postion et la forme du bouton*/
   position: relative;
   width: 15%;
   height: 115%;
@@ -99,7 +99,7 @@ header{
   animation: ombre 5s infinite ease-in-out;
 }
 
-@keyframes ombre{
+@keyframes ombre{  /*on fait l'animation ombre du bouton avec la couleur choisie*/
   0%{
       box-shadow: 0px 0px 45px 30px #fec675;
   }
@@ -117,25 +117,25 @@ header{
   }
 }
 
-.sec2 button:hover{
+.sec2 button:hover{  /*on met un effet lorsque notre curseur passe sur le bouton*/
   background-color: #272542;
   cursor: pointer;
 }
 
 
-.sec2{
+.sec2{  /*on determine les marges de la section 2*/ 
   padding: 120px;
   margin-bottom: 110px;
 }
 
   /*section 3*/ 
-.sec3 img {
+.sec3 img {  /* on definit la taille et la marge externe de l'image*/
   width: 80%;
   height: 80%;
   margin: 25px 0px;
 }
 
-.sec3{
+.sec3{  /*on place l'image*/
   margin: 120px;
   padding: auto;
   text-align: center;
@@ -143,90 +143,89 @@ header{
 }
 
 
-.sec3 .parent {
+.sec3 .parent {  /*on met la position, la marge externe et le maximum de largeur de tout ce qui est dans la section3 et dans le parent*/
   display: flex;
   align-items: center;
   max-width: 1500px;
   margin: 90px;
 }
 
-p{
+p{  /*on determine la couleur du texte*/
   color: white;
 }
 
-.sec4 img{
+.sec4 img{  /* on règle la taille et la position de l'image*/
   border-radius: 10%;
   width: auto;
   height: 150px;
-
   justify-content: center;
 }
 
-#desc-left{
+#desc-left{  /*on definit la position de la description que l'on a faite*/
   position:relative;
   margin: 20px 10px;
 }
 
-#desc-left p{
+#desc-left p{  /* on place le texte des descriptions*/
   position: relative;
   margin-right: 3px;
 }
 
-#desc-right{
+#desc-right{  /*on definit la position de la description que l'on a faite*/
   position: relative;
   margin: 20px 10px;
 }
 
-#desc-right p{
+#desc-right p{   /* on place le texte des descriptions*/
   position: relative;
   margin-right: 3px;
 }
 
-#desc-right img{
+#desc-right img{  /*on place l'image*/
   right: 10px;
 }
 
-#twitter{
+#twitter{  /* on definit la couleur du lien twitter*/
   color:#fec675;
 }
 
-#twitter:hover{
+#twitter:hover{  /* on definit la couleur du lien twitter lorsqu'on le survole*/
   color: aqua;
 }
 
-#insta{
+#insta{  /* on definit la couleur du lien instagram*/
   color: #fec675;
 }
 
-#insta:hover{
+#insta:hover{  /* on definit la couleur du lien instagram lorsqu'on le survole*/
   color: violet;
 }
  /*responsive*/
  
- @media (max-width: 990px) {
+ @media (max-width: 990px) {  /* on fait le responsive du site pour un affichage max de 990px*/
 
-    header .navbar li{
+    header .navbar li{  /* on determine la largeur de la marge externe gauche du texte de la navbar*/
       margin-left: 0px;
     }
     
-    header .navbar li a {
+    header .navbar li a {  /*on definit la forme du texte et sa position dans la navbar*/
       color: wheat;
       text-decoration: none;
       margin-left: 30px;
       font-weight: 700;
     }
     
-    .navbar{
+    .navbar{  /* on met la position de la navbar*/
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
     }
-    section{
-      padding: 10px;
+    section{  /*on determine la marge interne de la section*/
+      padding: 10px;  
     }
     
-    header .navbar.active{
+    header .navbar.active{  /*on definit la taille, la position et la couleur de la navbar lorsque l'on a clique dessus*/
       width: 100%;
       height: calc(100% -68px);
       position: fixed;
@@ -238,7 +237,7 @@ p{
       background: #ffff;
       align-items: center;
     }
-    .sec2 button{
+    .sec2 button{  /* on fixe la largeur et la taille de l'ecriture du bouton*/
       width: auto;
       font-size: auto;
     }
@@ -246,21 +245,21 @@ p{
     
     
     
-    @media (max-width: 480px)
+    @media (max-width: 480px)  /* on fait le responsive du site pour un affichage max de 480px*/
     {
-      .titre-text{
+      .titre-text{  /*on determine la forme du texte */
           color: wheat;
           font-size: 2rem;
           font-weight: 300;
           text-transform: capitalize;
       }
-      img {
+      img {  /*on definit la taille et la position des images*/
         position: relative;
         width: auto;
         height: auto;
         object-fit: cover;
     }
-    .sec2 button{
+    .sec2 button{  /*on fixe la largeur et la taille de l'ecriture du bouton*/
       width: auto;
       font-size: auto;
     }
