@@ -60,9 +60,10 @@ header{
     .sec1 { grid-area: 1 / 1 / 2 / 6; }
     .sec2 { grid-area: 2 / 1 / 5 / 6; }
     .sec3 { grid-area: 5 / 1 / 6 / 6; }
+    .sec4 { grid-area: 7 / 1 / 7 / 7; }
 
   .sec1{
-    padding: 100px;
+    padding: 150px;
   }
 
   .titre{
@@ -121,18 +122,21 @@ header{
   cursor: pointer;
 }
 
+
 .sec2{
-  padding: 100px;
+  padding: 120px;
+  margin-bottom: 110px;
 }
 
   /*section 3*/ 
 .sec3 img {
-  width: 65%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
+  margin: 25px 0px;
 }
 
 .sec3{
-  margin: auto;
+  margin: 120px;
   padding: auto;
   text-align: center;
   justify-content: center;
@@ -146,7 +150,57 @@ header{
   margin: 90px;
 }
 
- 
+p{
+  color: white;
+}
+
+.sec4 img{
+  border-radius: 10%;
+  width: auto;
+  height: 150px;
+
+  justify-content: center;
+}
+
+#desc-left{
+  position:relative;
+  margin: 20px 10px;
+}
+
+#desc-left p{
+  position: relative;
+  margin-right: 3px;
+}
+
+#desc-right{
+  position: relative;
+  margin: 20px 10px;
+}
+
+#desc-right p{
+  position: relative;
+  margin-right: 3px;
+}
+
+#desc-right img{
+  right: 10px;
+}
+
+#twitter{
+  color:#fec675;
+}
+
+#twitter:hover{
+  color: aqua;
+}
+
+#insta{
+  color: #fec675;
+}
+
+#insta:hover{
+  color: violet;
+}
  /*responsive*/
  
  @media (max-width: 990px) {
@@ -202,10 +256,8 @@ header{
       }
       img {
         position: relative;
-        top: 0;
-        left: 37px;
-        width: 134px;
-        height: 298px;
+        width: auto;
+        height: auto;
         object-fit: cover;
     }
     .sec2 button{
