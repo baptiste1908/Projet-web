@@ -10,6 +10,7 @@
   p{  /*on met un style pour toute les zones de texte*/
     font-weight: 300;
     color: #111;
+  
   }
 
 /* La navbar */
@@ -140,6 +141,7 @@ header{  /* on definit la position, la taille et la couleur de tout ce qui se tr
   width: 70%;
   height: 70%;
   margin: 25px 0px;
+  border-radius: 20px;
 }
 
 .sec3{  /*on place l'image*/
