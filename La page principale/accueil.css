@@ -132,7 +132,7 @@ header{  /* on definit la position, la taille et la couleur de tout ce qui se tr
 
 .sec2{  /*on determine les marges de la section 2*/ 
   padding: 120px;
-  margin-bottom: 110px;
+  margin-bottom: 80px;
 }
 
   /*section 3*/ 
@@ -166,6 +166,7 @@ p{  /*on determine la couleur du texte*/
   width: auto;
   height: 150px;
   justify-content: center;
+  align-items: center;
 }
 
 #desc-left{  /*on definit la position de la description que l'on a faite*/
@@ -189,7 +190,7 @@ p{  /*on determine la couleur du texte*/
 }
 
 #desc-right img{  /*on place l'image*/
-  right: 10px;
+  right: 100px;
 }
 
 #twitter{  /* on definit la couleur du lien twitter*/
