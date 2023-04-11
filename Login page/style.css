@@ -5,7 +5,9 @@
 body{
     font-family: 'poppins' sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to left, hotpink, aquamarine, darkblue);
+    background-color: #2a2b46;
+    opacity: 1;
+    background: repeating-linear-gradient( -45deg, #fb911f, #fb911f 16.5px, #2a2b46 16.5px, #2a2b46 82.5px );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,20 +15,12 @@ body{
 
 .login-card{
     width: 300px;
-    background:rgba(255, 255, 255, .5);
+    background:#2a2b46;
     padding: 4rem;
     border-radius: 10px;
     position: relative;
 }
 
-.login-card::before{
-    content: '';
-    position: absolute;
-    background-color: rgba(255, 255, 255, .15);
-    inset: 0;
-    transform: rotate(-5deg);
-    z-index: -1;
-}
 
 .login-card-logo{
     margin-bottom: 2rem;
@@ -35,7 +29,9 @@ body{
 .login-card-logo img{
     width: 60px;
     height: 60px;
+    color: white;
 }
+
 
 .login-card-logo, .login-card-header, .login-card-footer{
     text-align: center;
@@ -52,6 +48,7 @@ body{
 
 .login-card-header {
     margin-bottom: 2rem;
+    color: #fb911f;
 }
 
 .login-card-header h1{
@@ -119,11 +116,11 @@ body{
 .login-card input[type="checkbox"]{
     width: 16px;
     height: 16px;
-    accent-color: black;
+    accent-color: #fb911f;
 }
 
 .login-card-form button{
-    background-color: black;
+    background-color: #fb911f;
     color: white;
     padding: 1rem;
     border-radius: 100px;
@@ -132,8 +129,8 @@ body{
 }
 
 .login-card-form button:hover{
-    background-color: rgba(0, 0, 0, .80);
-    cursor: pointer;
+    background-color: #fb911f;
+    cursor:  pointer;
 }
 
 .login-card-social {
@@ -145,10 +142,11 @@ body{
 }
 
 .login-card-social{
-    opacity: .8;
+    opacity: 1;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: calc(1rem * .8rem);
+    color: white;
 }
 
 .login-card-social-btns{
@@ -162,10 +160,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: #fb911f;
     width: 50px;
     height: 50px;
-    background: rgba(255, 255, 255, .6);
+    background: white;
     border-radius: 100px;
 }
 
